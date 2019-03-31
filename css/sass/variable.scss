@@ -1,0 +1,39 @@
+$gris1: #f4f4f4;
+$gris2: #4d4d4d;
+$negro: #000000;
+$rojo: #ee2e24;
+
+.back_gris {
+	background-color: #f2f2f2;
+}
+
+.back_rojo {
+	background-color: $rojo;
+}
+
+.icon-facebook,
+.icon-linkedin {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+	margin: 6px;
+}
+
+.icon-facebook {
+	background: #3253a4;
+
+	.fa-facebook-f {
+		color: white;
+	}
+}
+
+.icon-linkedin {
+	background: #138bd6;
+
+	.fa-linkedin-in {
+		color: white;
+	}
+}

@@ -1,0 +1,58 @@
+footer {
+
+	.back_rojo {
+		color: white;
+		padding: 35px 0;
+		font-size: 14px;
+
+		a {
+			color: white;
+		}
+
+		h4 {
+			margin-bottom: 8px;
+			color: white;
+		}
+
+		.row {
+			border-top: solid 1px white;
+			padding-top: 21px;
+
+			p,
+			b {
+				margin-bottom: 5px;
+				display: block;
+			}
+		}
+	}
+
+	.back_gris {
+		padding: 50px 0;
+		font-size: 13px;
+
+		.logo {
+			img {
+				width: 120px;
+			}
+		}
+
+		.listado_circulos {
+			li {
+				a {
+					color: $negro;
+					letter-spacing: 0.1px;
+				}
+			}
+		}
+	}
+
+	.post_footer {
+		a {
+			color: #636363;
+			font-size: 10px;
+			padding: 15px;
+			display: block;
+			padding-left: 0;
+		}
+	}
+}

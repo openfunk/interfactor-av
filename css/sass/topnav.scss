@@ -1,0 +1,64 @@
+.navbar {
+	flex-direction: column;
+	padding: 0;
+
+	//	.navbar_top,
+	//	.navbar_bot {
+	//		margin: auto;
+	//		max-width: 1140px;
+	//	}
+
+	.navbar_top {
+		background: $rojo;
+		color: white;
+		width: 100%;
+
+		.row {
+			align-content: space-between;
+		}
+
+		a {
+			padding: 15px;
+			color: white;
+			display: inline-block;
+		}
+
+		.fono {}
+
+		.info {
+			text-align: right;
+		}
+	}
+
+	.navbar_bot {
+		display: flex;
+		width: 100%;
+		background: white;
+
+		.navbar-brand {
+			padding: 20px;
+			img {
+				width: 195px;
+			}
+		}
+		.navbar-nav {
+			margin-right: 20px;
+			.nav-item {
+				color: $negro;
+				font-size: 18px;
+				text-transform: uppercase;
+				letter-spacing: 0.2px;
+				font-weight: 500;
+				&.active {
+					border-bottom: solid 5px $rojo;
+				}
+			}
+		}
+		.acciones {
+			.boton_blanco {
+				margin: 7px;
+			}
+		}
+	}
+
+}
