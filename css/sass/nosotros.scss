@@ -1,0 +1,287 @@
+.nosotros {
+	&.container-fluid {
+		max-width: 1380px;
+	}
+
+	.intro {
+		margin-bottom: 120px;
+
+		h2 {
+			font-size: 30px;
+			text-align: right;
+		}
+	}
+
+	.imagenes_falsas {
+		h2 {
+			color: $rojo;
+			font-weight: 700;
+		}
+
+		p {
+			max-width: 550px;
+		}
+
+		.imagen {
+			background-color: rgba(216, 216, 216, 0.5);
+			position: relative;
+			min-height: 350px;
+			margin-bottom: 70px;
+
+			img {
+				width: 100%;
+				position: absolute;
+				bottom: 6%;
+				left: -4%;
+
+				&.derecha {
+					left: 4%;
+				}
+			}
+		}
+	}
+}
+
+.valores {
+	padding-top: 70px;
+	padding-bottom: 90px;
+	margin-bottom: -90px;
+
+	.check_rojo {
+		margin-bottom: 50px;
+		text-align: left;
+		display: inline-block;
+	}
+
+	h4 {
+		line-height: 1.38;
+		font-weight: 400;
+		letter-spacing: 0.2px;
+	}
+
+	.valores_list {
+		display: flex;
+		align-items: flex-start;
+
+		div {
+			margin-bottom: 60px;
+		}
+
+		i {
+			color: $rojo;
+			font-size: 46px;
+			margin-right: 12px;
+		}
+
+		h4 {
+			font-weight: 700;
+			margin: 0;
+			display: block;
+		}
+
+		p {
+			color: $gris2;
+			margin: 0;
+		}
+	}
+}
+
+
+.fake_tabs {
+	text-align: left;
+	margin-bottom: 100px;
+
+	a {
+		font-size: 25px;
+		font-weight: 700;
+		color: $negro;
+		opacity: .3;
+		padding: 4px 30px;
+		border-bottom: solid 10px $negro;
+		margin-right: -4px;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+		position: relative;
+
+		&.active {
+			opacity: 1;
+			border-bottom: solid 10px $rojo;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		&:before {
+			content: '';
+			width: 0%;
+			position: absolute;
+			border-bottom: solid 10px $rojo;
+			bottom: -10px;
+			left: 0;
+			transition: 0.3s all;
+		}
+
+		&:hover {
+			text-decoration: none;
+			opacity: 1;
+
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.link_esp {
+	display: inline-block;
+	margin: 25px;
+	padding: 15px 45px;
+	padding-left: 80px;
+	background: white;
+	color: $negro;
+	border: solid 1px black;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	background: white url('../img/icon-pdf.png') no-repeat;
+	background-size: 25px;
+	background-position: 17% center;
+
+	&:hover {
+		background: $rojo url('../img/icon-pdf.png') no-repeat;
+		background-size: 25px;
+		background-position: 17% center;
+		color: white;
+		border: solid 1px $rojo;
+		text-decoration: none;
+	}
+}
+
+.accordion_empresa {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		.active {
+			color: $rojo;
+
+			a {
+				color: $rojo;
+			}
+		}
+	}
+
+	.card {
+		border: none;
+
+		.card-body {
+			padding: 15px 0px;
+		}
+	}
+
+	.card-header {
+		background-color: transparent;
+		border-bottom: none;
+		padding: 0px;
+
+		h2 {
+			border-bottom: 1px solid black;
+
+			.btn {
+				padding: 0;
+				color: $rojo;
+
+				&.collapsed {
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+
+.listado_sucu {
+	.sucursal {
+		display: flex;
+		border: solid 1px #4d4d4d;
+		margin-bottom: 25px;
+
+		.nombre {
+			padding: 30px 25px;
+			flex: 1;
+
+			h4 {
+				color: $rojo;
+				font-size: 20px;
+				line-height: 22px;
+				letter-spacing: 0.2px;
+			}
+		}
+
+		.direccion {
+			padding: 30px 25px;
+			flex: 7;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					margin-bottom: 5px;
+
+					a {
+						color: $gris2;
+
+						i {
+							color: $rojo;
+							font-size: 14px;
+							margin-right: 6px;
+						}
+					}
+
+					&:first-child {
+						margin-bottom: 7px;
+
+						a {
+							font-size: 18px;
+							line-height: 22px;
+							color: $negro !important;
+							letter-spacing: 0.2px;
+						}
+					}
+				}
+			}
+		}
+
+		.mapa {
+			padding: 0;
+			margin: 0;
+			flex: 2;
+		}
+
+		&:hover {
+			background: $gris1;
+			text-decoration: none;
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.select_region {
+	margin-bottom: 65px;
+
+	select {
+		display: block;
+	}
+}

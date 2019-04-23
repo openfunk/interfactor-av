@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/aos.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -20,15 +21,12 @@
 
 		<div class="navbar_top">
 			<div class="row no-gutters">
-
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fas fa-bars"></i>
 				</button>
-
 				<div class="fono col">
 					<a href="tel:2 2654 9000">MESA CENTRAL:<b>2 2654 9000</b></a>
 				</div>
-
 				<div class="info col">
 					<a href="#"><i class="fas fa-map-marker-alt"></i> SUCURSALES</a>
 					<a href="#"><i class="fas fa-user-circle"></i> ACCESO DE CLIENTES</a>
@@ -38,35 +36,35 @@
 
 		<div class="navbar_bot">
 			<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-
 			<div class="collapse navbar-collapse" id="navbarText">
 				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link active" href="#">Inicio</a>
-					<a class="nav-item nav-link" href="#">Empresa</a>
-					<a class="nav-item nav-link" href="#">Factoring</a>
-					<a class="nav-item nav-link" href="#">contacto</a>
+					<a class="nav-item nav-link active" href="index.html">Inicio</a>
+					<a class="nav-item nav-link" href="empresa.html">Empresa</a>
+					<a class="nav-item nav-link" href="factoring.html">Factoring</a>
+					<a class="nav-item nav-link" href="contacto.html">contacto</a>
 				</div>
-				<div class="acciones">
-					<a class="boton_blanco" href="#">Cotizar</a>
-					<a class="boton_blanco" href="#">Hazte cliente</a>
-				</div>
+			</div>
+			<div class="acciones">
+				<a class="boton_rojo" href="#" data-toggle="modal" data-target="#modalCotizar">Cotizar</a>
+				<a class="boton_blanco" href="#">Hazte cliente</a>
 			</div>
 		</div>
 	</nav>
 
 
-	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+	<div id="carouselHome" class="carousel slide carousel-fade slide_home" data-ride="carousel">
 		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			<li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselHome" data-slide-to="1"></li>
+			<li data-target="#carouselHome" data-slide-to="2"></li>
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="img/foto_prueba.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption">
-					<h5>First slide label</h5>
-					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					<h5><span class="texto_rojo">ANTICIPAMOS</span> EL PAGO DE TU FACTURA</h5>
+					<h3>de forma ágil y a tiempo con tus necesidades</h3>
+					<a href="#" class="boton_rojo">HAZTE CLIENTE</a>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -84,45 +82,180 @@
 				</div>
 			</div>
 		</div>
-		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+			<span class="linea" aria-hidden="true"><img src="img/slide_izq_linea.png"></span>
+			<span class="completo" aria-hidden="true"><img src="img/slide_izq_roja.jpg"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+			<span class="linea" aria-hidden="true"><img src="img/slide_derecha_linea.png"></span>
+			<span class="completo" aria-hidden="true"><img src="img/slide_derecha_roja.jpg"></span>
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
 
 
 	<section>
-		<div class="container">
-			bskjfbnkjsdbgksdbjk
+		<div class="container porque">
+			<h2 class="check_rojo">Porqué elegirnos <img src="img/check_rojo.png"></h2>
+			<div class="row">
+				<div class="col-md-3 col-12 iconos_animados">
+					<div class="icon_porque">
+						<span><img src="img/Grupo_1028@2x.png"></span>
+						<span><img src="img/Grupo_1028@2x.png"></span>
+					</div>
+					<h4>Más de una década de trayectoria</h4>
+					<div class="circulito"></div>
+					<p>Contamos con un equipo con experiencia para entregar soluciones a tu medida.</p>
+				</div>
+				<div class="col-md-3 col-12 iconos_animados">
+					<div class="icon_porque">
+						<span><img src="img/Grupo_1029@3x.png"></span>
+						<span><img src="img/Grupo_1029@3x.png"></span>
+					</div>
+					<h4>Portal de <br> clientes</h4>
+					<div class="circulito"></div>
+					<p>Ten acceso a toda la información de tus operaciones y procesa tus facturas on-line.</p>
+				</div>
+				<div class="col-md-3 col-12 iconos_animados">
+					<div class="icon_porque">
+						<span><img src="img/Grupo_1030@2x.png"></span>
+						<span><img src="img/Grupo_1030@2x.png"></span>
+					</div>
+					<h4>Presentes en 13 regiones de Chile</h4>
+					<div class="circulito"></div>
+					<p>Estamos cerca de nuestros clientes dónde y cuándo nos necesiten.</p>
+				</div>
+				<div class="col-md-3 col-12 iconos_animados">
+					<div class="icon_porque">
+						<span><img src="img/Grupo_1031@2x.png"></span>
+						<span><img src="img/Grupo_1031@2x.png"></span>
+					</div>
+					<h4>Procesos ágiles sin interrupciones</h4>
+					<div class="circulito"></div>
+					<p>Reduce el tiempo de giro de tu dinero cediendo a través de nuestro portal.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
+	<section class="back_gris factoring_home">
+		<div class="container img_pc">
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<h2 class="check_rojo">
+						Factoring
+						<img src="img/check_rojo.png">
+					</h2>
+					<h4>La ágil herramienta financiera que tu negocio necesita</h4>
+					<p>Una alternativa a tu alcance para el crecimiento de las empresas, que transforma tus facturas en dinero en efectivo, sin aparecer en el sistema bancario ni preocuparte por la cobranza a tus proveedores.</p>
+					<a href="#" class="boton_blanco">VER MÁS</a>
+				</div>
+				<div class="col-md-6 col-12 imagen_flotadora">
+					<div data-aos="fade-left">
+						<img src="img/web4@2x.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container paso_a_paso">
+			<h3>¡En <span class="texto_rojo">cuatro</span> simples pasos!</h3>
+			<div class="row">
+				<div class="col-md-3 col-12" data-aos="fade-right" data-aos-offset="200">
+					<span class="numero">1</span>
+					<span class="red_dot"></span>
+					<p>Registrate en nuestro portal</p>
+				</div>
+				<div class="col-md-3 col-12 derecha" data-aos="fade-right" data-aos-offset="250">
+					<span class="numero">2</span>
+					<span class="red_dot"></span>
+					<span class="numero mobile">2</span>
+					<p>Envía la documentación requerida</p>
+				</div>
+				<div class="col-md-3 col-12" data-aos="fade-right" data-aos-offset="300">
+					<span class="numero">3</span>
+					<span class="red_dot"></span>
+					<p>Cede tus facturas online</p>
+				</div>
+				<div class="col-md-3 col-12 derecha" data-aos="fade-right" data-aos-offset="350">
+					<span class="numero">4</span>
+					<span class="red_dot"></span>
+					<span class="numero mobile">4</span>
+					<p>Recibe tu dinero a tiempo</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cliente">
+		<h2>HAZTE CLIENTE</h2>
+		<h3>y comienza a ceder tus facturas</h3>
+		<div class="container">
+			<div class="testimonio row">
+				<div class="col-md-4 col-12">
+					<h2 class="check_rojo">Testimonios <img src="img/check_rojo.png"></h2>
+					<h4>Más de 10 años otorgando soluciones financieras a nuestros clientes</h4>
+				</div>
+				<div class="col-md-4 col-12">
+					<i>“Hay una comunicación fluida con los ejecutivos que nos atienden, ellos entienden de nuestro negocio y operan con rapidez”</i>
+					<p>Rodolfo Moncada</p>
+					<p class="texto_rojo">
+						Gerente de Finanzas
+						<br>
+						Empresas Carlos García Gross</p>
+				</div>
+				<div class="col-md-4 col-12">
+					<i>“Además de la agilidad en las operaciones se ha desarrollado un vínculo de confianza y transparencia con el personal de Interfactor”</i>
+					<p>Marcelo Araya</p>
+					<p class="texto_rojo">
+						Gerente de Administración
+						<br>
+						Martinic</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="noticias_home">
+		<div class="container">
+			<h2 class="check_rojo">Actualidad <img src="img/check_rojo.png"></h2>
+			<div class="row">
+				<a class="col-md-6 col-12 noticia" href="noticia.html">
+					<span class="date">05 Frebrero 2019</span>
+					<h4>Título de la noticia nueva agregada</h4>
+					<p>Una alternativa a tu alcance para el crecimiento de las empresas, que transforma tus facturas. Una alternativa a tu alcance para el crecimiento de las empresas, que transforma tus facturas…</p>
+				</a>
+				<a class="col-md-6 col-12 noticia" href="noticia.html">
+					<span class="date">05 Frebrero 2019</span>
+					<h4>Título de la noticia nueva agregada</h4>
+					<p>Una alternativa a tu alcance para el crecimiento de las empresas, que transforma tus facturas. Una alternativa a tu alcance para el crecimiento de las empresas, que transforma tus facturas…</p>
+				</a>
+			</div>
+		</div>
+	</section>
 
 	<footer>
 		<div class="back_rojo">
 			<div class="container">
 				<h4>¿NECESITAS AYUDA?</h4>
 				<div class="row">
-					<div class="col">
+					<div class="col-md-3 col-12">
 						<b>Mesa Central</b>
 						<p>2 2654 9001</p>
 						<p><a href="#">info@interfactor.cl</a></p>
 					</div>
-					<div class="col">
+					<div class="col-md-3 col-12">
 						<b>Mesa Central</b>
 						<p>2 2654 9001</p>
 						<p><a href="#">info@interfactor.cl</a></p>
 					</div>
-					<div class="col">
+					<div class="col-md-3 col-12">
 						<b>Mesa Central</b>
 						<p>2 2654 9001</p>
 						<p><a href="#">info@interfactor.cl</a></p>
 					</div>
-					<div class="col">
+					<div class="col-md-3 col-12">
 						<b>Mesa Central</b>
 						<p>2 2654 9001</p>
 						<p><a href="#">info@interfactor.cl</a></p>
@@ -133,38 +266,38 @@
 		<div class="back_gris">
 			<div class="container">
 				<div class="row">
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<a class="logo" href="index.html"><img src="img/logo.png"></a>
 					</div>
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<ul class="listado_circulos">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Empresa</a></li>
-							<li><a href="#">Factoring</a></li>
+							<li><a href="#"><span></span> Inicio</a></li>
+							<li><a href="#"><span></span> Empresa</a></li>
+							<li><a href="#"><span></span> Factoring</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<ul class="listado_circulos">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Empresa</a></li>
-							<li><a href="#">Factoring</a></li>
+							<li><a href="#"><span></span> Inicio</a></li>
+							<li><a href="#"><span></span> Empresa</a></li>
+							<li><a href="#"><span></span> Factoring</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<ul class="listado_circulos">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Empresa</a></li>
-							<li><a href="#">Factoring</a></li>
+							<li><a href="#"><span></span> Inicio</a></li>
+							<li><a href="#"><span></span> Empresa</a></li>
+							<li><a href="#"><span></span> Factoring</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<ul class="listado_circulos">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Empresa</a></li>
-							<li><a href="#">Factoring</a></li>
+							<li><a href="#"><span></span> Inicio</a></li>
+							<li><a href="#"><span></span> Empresa</a></li>
+							<li><a href="#"><span></span> Factoring</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-md-2 col-12">
 						<a href="#" class="icon-linkedin"><i class="fab fa-linkedin-in"></i></a>
 						<a href="#" class="icon-facebook"><i class="fab fa-facebook-f"></i></a>
 					</div>
@@ -178,11 +311,74 @@
 		</div>
 	</footer>
 
+	<!-- MODAL -->
+
+	<div class="modal fade" id="modalCotizar" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h2 class="check_rojo">Cotizar <img src="img/check_rojo.png"></h2>
+					<h4>Ingresa los siguientes datos para que puedas recibir tu cotización.</h4>
+					<form>
+						<div class="row">
+							<div class="col-12">
+								<label>Nombre<b>*</b></label>
+								<input type="text" placeholder="Nombre">
+							</div>
+							<div class="col-md-6 col-12">
+								<label>Email<b>*</b></label>
+								<input type="email" placeholder="Empresa">
+							</div>
+							<div class="col-md-6 col-12">
+								<label>Teléfono<b>*</b></label>
+								<input type="tel" placeholder="123123123">
+							</div>
+							<div class="col-md-6 col-12">
+								<label>Email<b>*</b></label>
+								<input type="email" placeholder="Empresa">
+							</div>
+							<div class="col-md-6 col-12">
+								<label>Teléfono<b>*</b></label>
+								<input type="tel" placeholder="123123123">
+							</div>
+							<div class="col-12">
+								<label class="subir_file" for="adjuntar">
+									<p class="boton_blanco">Adjuntar Facturas</p>
+									<input type="file" placeholder="Adjuntar Facturas" id="adjuntar">
+								</label>
+								
+							</div>
+							<div class="col-12">
+								<p>*Campos obligatorios</p>
+							</div>
+							<div class="col-12 text-center">
+								<a href="#" class="boton_rojo">Cotizar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/aos.js"></script>
+
+	<script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+
+	</script>
+
 </body>
 
 </html>

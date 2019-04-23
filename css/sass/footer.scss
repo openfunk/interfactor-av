@@ -1,5 +1,6 @@
 footer {
-
+	margin-top: 90px;
+	
 	.back_rojo {
 		color: white;
 		padding: 35px 0;
@@ -17,7 +18,9 @@ footer {
 		.row {
 			border-top: solid 1px white;
 			padding-top: 21px;
-
+			div {
+				margin-bottom: 20px;
+			}
 			p,
 			b {
 				margin-bottom: 5px;
@@ -37,8 +40,21 @@ footer {
 		}
 
 		.listado_circulos {
+			margin-bottom: 0;
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			li {
 				a {
+					span {
+						height: 8px;
+						width: 8px;
+						display: inline-block; 
+						border: solid 1px $rojo;
+						margin-right: 7px;
+						background-color: transparent;
+						border-radius: 100%;
+					}
 					color: $negro;
 					letter-spacing: 0.1px;
 				}

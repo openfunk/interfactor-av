@@ -1,0 +1,200 @@
+.noticia {
+	padding: 0 15px;
+	margin: 0;
+	margin-bottom: 60px;
+	cursor: pointer;
+	transition: all .3s ease;
+
+	&.destacada {
+		background: rgba(216, 216, 216, 0.3);
+		padding: 40px;
+	}
+
+	.date {
+		background: $rojo;
+		color: white;
+		font-size: 10px;
+		padding: 7px 15px;
+		display: inline-block;
+		border: solid 1px $rojo;
+		transition: all .3s ease;
+	}
+
+	h4 {
+		transition: all .3s ease;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		color: $gris2;
+	}
+
+	&:hover {
+		transition: all .3s ease;
+
+		h4 {
+			color: $rojo;
+		}
+
+		.date {
+			background: white;
+			color: $negro;
+		}
+
+		text-decoration: none;
+
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 30px !important;
+	}
+}
+
+.noticia_completa {
+	.texto {
+		h4 {
+			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: $gris2;
+
+			a {
+				color: $rojo;
+			}
+		}
+	}
+
+	.extra {
+		display: block;
+		border-bottom: solid 1px black;
+		border-top: solid 1px black;
+		padding: 20px 0;
+		display: flex;
+		align-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+
+		.tags {
+			text-transform: uppercase;
+			flex: 1;
+
+			b {
+				text-transform: uppercase;
+				font-weight: 800;
+				color: black;
+			}
+
+			a {
+				color: #4d4d4d;
+				margin-left: 8px;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $rojo;
+					text-decoration: none;
+				}
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.share {
+			flex: 1;
+			text-transform: uppercase;
+			text-align: right;
+
+			.icon-facebook,
+			.icon-linkedin {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+
+				i {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.date {
+		background: $rojo;
+		color: white;
+		font-size: 10px;
+		padding: 7px 15px;
+		display: inline-block;
+		border: solid 1px $rojo;
+		margin-bottom: 10px;
+	}
+
+	.noticia {
+		margin-bottom: 30px;
+
+		p {
+			color: $negro;
+		}
+	}
+
+	.sidebar {
+		input {
+			border: solid 1px $gris2;
+			width: 100%;
+			padding: 14px 20px;
+			margin-bottom: 30px;
+			font-size: 14px;
+			color: $gris2;
+			//			background-color: rgba(77, 77, 77, 0.06);
+			background: url('../img/magnifyingglass@2x.png') 94% / 20% no-repeat rgba(77, 77, 77, 0.06);
+			background-size: 25px;
+		}
+
+		> div {
+			border: solid 1px #707070;
+			padding: 30px 20px;
+			margin-bottom: 35px;
+
+			h4 {
+				margin-bottom: 15px;
+			}
+		}
+
+		.noticia {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.temas {
+			a {
+				text-transform: uppercase;
+				display: flex;
+				align-content: space-between;
+				color: $gris2;
+				margin-bottom: 10px;
+
+				&:hover {
+					color: $rojo;
+					text-decoration: none;
+				}
+
+				span {
+					flex: 1;
+
+					&:last-child {
+						text-align: right;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

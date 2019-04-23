@@ -1,0 +1,145 @@
+.side_contact {
+	hr {
+		margin: 25px 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		margin-bottom: 25px;
+		padding: 0;
+
+		li {
+			color: $gris2;
+
+			&:first-child {
+				color: $negro;
+				font-weight: bold;
+			}
+
+			a {
+				color: $negro;
+			}
+		}
+
+		&.casa_matriz {
+			li {
+				color: $negro;
+				font-size: 18px;
+
+				a {
+					color: $negro;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+form {
+	label {
+		color: $gris2;
+
+		b {
+			color: $rojo;
+		}
+	}
+
+	input {
+		margin-bottom: 20px;
+	}
+
+	p {
+		text-align: right;
+		color: $rojo;
+		margin: 20px 0;
+	}
+}
+
+input,
+textarea {
+	border: 1px solid $gris2;
+	border-radius: 0;
+	padding: 15px 25px;
+	display: block;
+	width: 100%;
+}
+
+select {
+	width: 300px;
+	padding: 15px 25px;
+	font-size: 16px;
+	border: 1px solid $gris2;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../img/Trazado560@2x.png') 94% / 20% no-repeat white;
+	background-size: 15px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.accordion_faq {
+	margin-bottom: 50px;
+	> h4 {
+		color: $rojo;
+		margin-bottom: 15px;
+	}
+
+	.card {
+		border: none;
+
+		.card-header {
+			border-bottom: solid 1px $gris2;
+			border-top: solid 1px $gris2;
+			background-color: transparent;
+			padding-left: 0;
+
+			h2 {
+				.btn {
+					font-size: 17px;
+					color: black;
+					padding-left: 0;
+					letter-spacing: 0.2px;
+					font-weight: 700;
+					width: 100%;
+					text-align: left;
+
+					&.collapsed {
+						.mas {
+							display: inline-block;
+						}
+
+						.menos {
+							display: none;
+						}
+					}
+				}
+
+				span {
+					float: right;
+					font-size: 25px;
+					line-height: 1;
+
+					&.mas {
+						display: none;
+						color: $gris2;
+					}
+
+					&.menos {
+						display: inline-block;
+						color: $rojo;
+					}
+				}
+			}
+		}
+
+		.card-body {
+			padding-left: 0;
+			color: $gris2;
+		}
+	}
+}

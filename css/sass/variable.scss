@@ -18,22 +18,48 @@ $rojo: #ee2e24;
 	display: inline-block;
 	border-radius: 100%;
 	text-align: center;
-	line-height: 40px;
+	line-height: 46px;
 	margin: 6px;
+
+	i {
+		font-size: 20px;
+	}
 }
 
 .icon-facebook {
 	background: #3253a4;
+	border: solid 1px #3253a4;
+	transition: 0.3s all;
 
 	.fa-facebook-f {
 		color: white;
+	}
+
+	&:hover {
+		background: white;
+		transition: 0.3s all;
+
+		.fa-facebook-f {
+			color: #3253a4;
+		}
 	}
 }
 
 .icon-linkedin {
 	background: #138bd6;
+	border: solid 1px #138bd6;
+	transition: 0.3s all;
 
 	.fa-linkedin-in {
 		color: white;
+	}
+
+	&:hover {
+		background: white;
+		transition: 0.3s all;
+
+		.fa-linkedin-in {
+			color: #138bd6; 
+		}
 	}
 }
